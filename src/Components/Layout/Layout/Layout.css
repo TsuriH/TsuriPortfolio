@@ -1,7 +1,6 @@
 .Layout {
 	display: flex;
     flex-direction: column;
-    border: 2px solid white;
     min-height: 100vh;
     height: 100%;
 }

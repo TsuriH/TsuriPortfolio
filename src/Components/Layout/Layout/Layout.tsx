@@ -1,3 +1,4 @@
+import { Hero } from "../Hero/Hero";
 import "./Layout.css";
 
 export function Layout(): JSX.Element {
@@ -9,7 +10,7 @@ export function Layout(): JSX.Element {
             </header>
 
             <main>
-
+                <Hero />
             </main>
 
             <footer>
