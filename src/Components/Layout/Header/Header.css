@@ -1,3 +1,25 @@
 .Header {
-	
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Header .my-name {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.Header .my-name span {
+    font-weight: 100;
+}
+
+.Header .contacts-options {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+    
 }

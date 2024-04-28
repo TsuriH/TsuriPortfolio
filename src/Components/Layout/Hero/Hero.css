@@ -1,42 +1,25 @@
-.Hero {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 100vh;
-}
-
-.Hero p:first-child {
-    color: var(--green);
-    font-weight: 400;
-    margin-bottom: 30px;
-
-}
 
 .Hero h2 {
     color: var(--lightest-slate);
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-align: start;
+    padding-left: 2.5em;
+}
+
+.Hero .self-description {
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+}
+
+.Hero .self-description span {
+    color:rgb(158, 22, 22) ;
     
 }
 
-.Hero h3 {
-    color: var(--slate);
-    font-size: clamp(40px, 8vw, 80px);
-
-}
-
-.Hero .about-me {
-    color: var(--slate);
-
-}
-
-.Hero button {
-    background: none;
-    border: none;
-    padding: 1em 3em;
-    color: var(--green);
-    border: 2px solid var(--green);
-    border-radius: var(--border-radius);
-    font-size: var(--fz-sm);
-    margin-top: 50px;
+.Hero .about {
+    color: white;
+    opacity: 0.3;
+    line-height: 1.6em;
 }
