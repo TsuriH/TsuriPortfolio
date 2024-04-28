@@ -1,10 +1,28 @@
+.Hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+
+}
+
+.Hero .hero-container {
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+    padding-top: 13rem;
+}
 
 .Hero h2 {
     color: var(--lightest-slate);
     font-size: 1rem;
     color: rgb(255, 255, 255);
     text-align: start;
-    padding-left: 2.5em;
+    text-align: center;
 }
 
 .Hero .self-description {
@@ -14,12 +32,30 @@
 }
 
 .Hero .self-description span {
-    color:rgb(158, 22, 22) ;
-    
+    color: rgb(158, 22, 22);
+
 }
 
-.Hero .about {
+.Hero .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.Hero .nav-btn {
+    text-decoration: none;
+    background-color: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1.3rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 5px;
     color: white;
-    opacity: 0.3;
-    line-height: 1.6em;
+    font-weight: 300;
+}
+
+.Hero button:hover {
+    background: white;
+    color: #0A192F;
 }

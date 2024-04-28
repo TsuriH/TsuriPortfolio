@@ -34,6 +34,7 @@ body {
 
 body {
   background:radial-gradient(at 0% 5%, #203657 0%, #0A192F 30%);
+  /* problem I want another gradient */
   font-family: var(--font-sans);
   padding: 2em;
   font-family: var(--font-mono);
