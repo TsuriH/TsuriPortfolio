@@ -5,3 +5,7 @@
   flex-direction: column;
   gap: 4rem;
 }
+
+.Layout .projects {
+  margin-top: 250px;
+}

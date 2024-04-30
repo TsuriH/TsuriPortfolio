@@ -1,6 +1,15 @@
 import "./Hero.css";
 import { NavLink } from "react-router-dom";
-export function Hero(): JSX.Element {
+
+interface HeroProps {
+    scroll: Function;
+    projects: any;
+    about: any;
+    contact: any;
+}
+
+
+export function Hero(props: HeroProps): JSX.Element {
     return (
         <div className="Hero">
             <div className="hero-container">
@@ -11,9 +20,12 @@ export function Hero(): JSX.Element {
                     {/* Coming from the motion design field gives me a better understanding of design principles and a keen eye for aesthetics, which I blend with my technical skills on every project */}
                 </p>
                 <div className="nav-buttons">
-                    <NavLink to="project" className="nav-btn">Project</NavLink>
-                    <NavLink to="about" className="nav-btn">About</NavLink>
-                    <NavLink to="contact" className="nav-btn">Contact</NavLink>
+
+                    <NavLink to="projects" className="nav-btn" onClick={() => props.scroll(props.projects)}>Projects</NavLink>
+
+                    <NavLink to="about" className="nav-btn" onClick={() => props.scroll(props.about)}>About</NavLink>
+
+                    <NavLink to="contact" className="nav-btn" onClick={() => props.scroll(props.contact)}>Contact</NavLink>
                 </div>
             </div>
 
