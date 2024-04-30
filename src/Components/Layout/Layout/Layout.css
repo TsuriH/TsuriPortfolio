@@ -3,9 +3,13 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  align-items: center;
+  
 }
 
-.Layout .projects {
-  margin-top: 250px;
+.Layout header {
+  height: 100px;
+  position: absolute;
+  width: 100%;
+  padding-top: 2em;
 }
