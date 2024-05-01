@@ -1,8 +1,9 @@
 .Hero {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     height: 100vh;
+    padding-top: 12rem;
     /* border: 2px solid red; */
 }
 
@@ -28,6 +29,13 @@
     font-size: 2rem;
     color: white;
 }
+
+.Hero .self-description  {
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+}
+
 
 .Hero .self-description span {
     color: rgb(158, 22, 22);
