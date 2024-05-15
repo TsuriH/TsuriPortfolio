@@ -27,17 +27,7 @@ export function Layout(): JSX.Element {
             </header>
 
             <main>
-                <Hero scroll={scrollToSection}      projects={projects}
-                    about={about}
-                    contact={contact}
-                />
-
-                <div className="projects" style={{ height: "500px", background: "red" }} ref={projects}>projects</div>
-
-                <div className="about" style={{ height: "500px", background: "blue" }} ref={about}>about</div>
-
-                <div className="contact" style={{ height: "500px", background: "yellow" }} ref={contact}>yellow</div>
-
+   
             </main>
 
             <footer>

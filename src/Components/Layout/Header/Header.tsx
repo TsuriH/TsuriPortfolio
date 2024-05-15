@@ -6,16 +6,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 export function Header(): JSX.Element {
     return (
         <div className="Header">
-			<p className="my-name">tsuri <span>heffer</span></p>
-            <div className="contacts-options">
-
-            <FontAwesomeIcon icon={faWhatsapp} />
-            <FontAwesomeIcon icon={faEnvelope} />
-            <FontAwesomeIcon icon={faGithub} />
-            <FontAwesomeIcon icon={faLinkedin} />
-
-            </div>
-
+            <p className="my-name">tsuri's</p>
+            <p className="portfolio-text">portfolio</p>
         </div>
     );
 }
