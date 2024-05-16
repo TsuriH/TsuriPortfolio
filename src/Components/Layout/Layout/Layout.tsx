@@ -3,7 +3,7 @@ import { Header } from "../Header/Header";
 import { Hero } from "../Hero/Hero";
 
 import "./Layout.css";
-import Projects from "../../Projects/Projects/Projects";
+import About from "../About/About";
 
 export function Layout(): JSX.Element {
 
@@ -28,17 +28,7 @@ export function Layout(): JSX.Element {
             </header>
 
             <main>
-                <Hero scroll={scrollToSection}      projects={projects}
-                    about={about}
-                    contact={contact}
-                />
-
-                <div className="projects" style={{ height: "100vh"}} ref={projects}><Projects /></div>
-
-                <div className="about" style={{ height: "100vh", background: "blue" }} ref={about}>about</div>
-
-                <div className="contact" style={{ height: "100vh", background: "yellow" }} ref={contact}>yellow</div>
-
+            <About />
             </main>
 
             <footer>
