@@ -9,6 +9,7 @@
     padding-top: 200px;
     position: relative;
     overflow-x: hidden;
+    z-index: 1;
 }
 
 .Header .my-name {
@@ -27,31 +28,17 @@
     bottom: 0px;
     animation: go-up 3s ease-in-out infinite;
     animation-delay: calc(var(--i) * 0.25s);
-   
-}
-
-.Header .image-wave-container #wave1 {
-    right: 200;
-}
-
-.Header .image-wave-container #wave2 {
-    right: 0px;
-}
-
-.Header #wave3 {
-    right: -150px;
-    animation: go-up-bottom-wave 3s ease-in-out infinite;
-    animation-delay: calc(var(--i) * 0.25s);
+    z-index: -1;
 }
 
 .Header .image-wave-container img {
     height: 100%;
     width: 100%;
-
+    display: block;
 }
 
 .Header #wave1 {
-    right: 20px;
+    right: 80px;
     opacity: 0.7;
     --i: 1;
 }
@@ -60,12 +47,12 @@
     --i: 2;
 }
 
-
-.Header #wave3 {
+.Header .bottom-wave{  
+    position: absolute; 
+    right: -150px;
     --i: 3;
-    bottom: -20px;
-}
 
+}
 
 .Header .wave-bottom-background {
     position: absolute;
@@ -73,7 +60,6 @@
     width: 150%;
     bottom: 0px;
     z-index: -2;
-
 }
 
 .Header .wave-bottom-background img {
@@ -82,22 +68,23 @@
 
 }
 
+/* .Header .backgroundWaves {
+    position: absolute;
+    bottom: 0px;
+    z-index: -2;
+    display: block;
+    height: 20px;
+
+} */
+
 @keyframes go-up {
-    0% {
+
+    0%,
+    100% {
         bottom: 0px;
     }
 
     50% {
         bottom: 10px;
-    }
-}
-
-@keyframes go-up-bottom-wave {
-    0%,100% {
-        bottom: -10px;
-    }
-
-    50% {
-        bottom: 0px;
     }
 }

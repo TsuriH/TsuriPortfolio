@@ -8,13 +8,16 @@ export function Header(): JSX.Element {
     const wave1 = document.getElementById("wave1")
     const wave2 = document.getElementById("wave2")
     const wave3 = document.getElementById("wave3")
+
     window.addEventListener('scroll', () => {
 
         if (wave1 && wave2 && wave3) {
-            const scrollValue = window.scrollY || window.pageYOffset;
-            wave1.style.right = `${-20 + scrollValue}px`;
-            wave2.style.right = `${10 + scrollValue}px`;
-            wave3.style.right = `${20 + scrollValue}px`;
+            const scrollValue = window.scrollY
+            wave1.style.right = `-${5 + scrollValue / 2}px`;
+            wave2.style.right = `-${5 + scrollValue / 2}px`;
+            wave3.style.right = `${5 + scrollValue / 2}px`;
+
+            console.log("Success")
         }
 
     })
@@ -35,10 +38,14 @@ export function Header(): JSX.Element {
                 <img src={regularWave} alt="" />
             </div>
 
-
             <div className="image-wave-container bottom-wave" id="wave3">
                 <img src={bottomWave} alt="" />
             </div>
+
+            {/* cant hide the gap between the animated waves and the bottom of the header component */}
+            {/* <div className="backgroundWaves">
+                <img src={backgroundWaves} alt="" />
+            </div> */}
 
 
 
