@@ -61,9 +61,10 @@
     }
 
     .About .description-container {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        padding: 0px 14rem;
+     width: 40%;
+     display: flex;
+     flex-direction: column;
+     gap:1em;
+     
     }
 }
