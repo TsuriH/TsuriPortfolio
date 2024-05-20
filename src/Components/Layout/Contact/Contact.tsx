@@ -9,7 +9,7 @@ function Contact(): JSX.Element {
             <h1>contact.</h1>
 
             <div className="contact-options-container">
-                
+
                 <div className="contact-icons-container">
                     <FontAwesomeIcon icon={faWhatsapp} />
                     <FontAwesomeIcon icon={faGithub} />
@@ -18,10 +18,18 @@ function Contact(): JSX.Element {
                 </div>
 
                 <div className="raw-contact">
-                    <p className="phone-number">0555577521</p>
-                    <p className="gmail">tsuri.he@gmail.com</p>
-                </div>
 
+                    <div>
+                        <p>Phone Number :</p> <p className="phone-number"></p> 0555577521
+                    </div>
+
+                    <div>
+                        <p>Gmail :</p> <p className="gmail">tsuri.he@gmail.com</p>
+                        <div />
+
+                    </div>
+                    
+                </div>
             </div>
 
         </div>

@@ -1,7 +1,6 @@
 import "./Header.css";
-import bottomWave from "../../../images/bottomwave.png"
+import frontWave from "../../../images/frontWave.png"
 import regularWave from "../../../images/regularwave.png"
-import backgroundWaves from "../../../images/backgroundwaves.png"
 
 export function Header(): JSX.Element {
 
@@ -30,27 +29,22 @@ export function Header(): JSX.Element {
             <p className="my-name">tsuri's</p>
             <p className="portfolio-text">portfolio</p>
 
-            <div className="image-wave-container" id="wave1">
+           <div className="image-wave-container testWave" id="wave1">
                 <img src={regularWave} alt="" />
-            </div>
+            </div> 
 
             <div className="image-wave-container" id="wave2" >
                 <img src={regularWave} alt="" />
             </div>
 
-            <div className="image-wave-container bottom-wave" id="wave3">
-                <img src={bottomWave} alt="" />
-            </div>
-            <div className="image-wave-container steady-wave" id="wave3">
-                <img src={bottomWave} alt="" />
+            <div className="front-wave" id="wave3" >
+                <img src={frontWave} alt="" />
             </div>
 
-            {/* cant hide the gap between the animated waves and the bottom of the header component */}
-            {/* <div className="backgroundWaves">
-                <img src={backgroundWaves} alt="" />
-            </div> */}
+        
 
-
+       
+       
 
         </div>
     );
