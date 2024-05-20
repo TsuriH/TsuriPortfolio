@@ -1,3 +1,37 @@
 .About {
-	
+    padding: 1em;
+    color: white;
+    font-family: "Neucha", cursive;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.About h1 {
+    font-size: 4rem;
+
+}
+
+.About .desc {
+    text-align: start;
+    font-size: 1.5rem;
+
+}
+
+.About .welcome {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.About .welcome span {
+    color: #004087;
+    font-weight: bold;
+
+}
+
+.About .first-paragraph span,
+.About .second-paragraph span,
+.About .third-paragraph span, .About .forth-paragraph span  {
+    color: #004087;
+    font-weight: bold;
 }
