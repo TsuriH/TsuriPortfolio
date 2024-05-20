@@ -68,6 +68,11 @@
 
 }
 
+.Header .steady-wave {
+    animation: none;
+    height: 50px;
+}
+
 /* .Header .backgroundWaves {
     position: absolute;
     bottom: 0px;

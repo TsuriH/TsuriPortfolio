@@ -4,6 +4,8 @@ import { Hero } from "../Hero/Hero";
 
 import "./Layout.css";
 import About from "../About/About";
+import Projects from "../../Projects/Projects/Projects";
+import Contact from "../Contact/Contact";
 
 export function Layout(): JSX.Element {
 
@@ -29,6 +31,8 @@ export function Layout(): JSX.Element {
 
             <main>
             <About />
+            <Projects />
+            <Contact />
             </main>
 
             <footer>

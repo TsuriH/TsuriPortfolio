@@ -1,83 +1,86 @@
 .Projects {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding-top: 2rem;
+    padding: 1em;
     color: white;
+    font-family: "Neucha", cursive;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    
+    gap: 1rem;
+    height: 100vh;
+    background: linear-gradient(180deg, #205FA5 25%, #004087 100%);
 }
 
-.Projects .skill-icons-container {
-    width: 100%;
-    height:200px;
-    border: pink solid 2px;
+.Projects h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+
 }
 
-.Projects .content-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 1rem;
-}
+
 
 .Projects .projects-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem
-}
+    height: 430px;
+    justify-content: start;
+    padding: 1em;
+    gap: 1em;
+    grid-auto-columns: 45%;
+    grid-template-rows: repeat(2, 50%);
+    grid-auto-flow: column;
+    overflow-y: scroll;
+    /* Enable horizontal scrolling */
 
-.Projects .live-project {
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    position: absolute;
-    top: 110%;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: all 0.3s ease;
-    color: white;
-    text-decoration: none;
-    z-index: 2;
 }
 
 .Projects .project-container {
-    height: 100px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+
+    border: 1px solid #4492E4;
+    border-radius: 15px;
+    height: 100%;
+    width: auto;
     overflow: hidden;
+    position: relative;
 }
 
-.Projects .project-container::before {
-
+.Projects .project-container:after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(111, 165, 223, 0.466);
+    transition: height 0.3s ease-in-out;
 }
 
-.Projects .project-container:hover::before {
-    opacity: 1;
+.Projects .project-container:hover:after {
+    height: 0%;
 }
 
-.Projects .project-container:hover .live-project {
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 1;
+.Projects .project-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
+@media (min-width: 1000px) {
 
-.Projects .project-description {
-    line-height: 1.5rem;
+    .Projects h1 {
+        font-size: 6rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .Projects .projects-wrapper {
+        display: grid;
+        height: 850px;
+        justify-content: center;
+        padding: 1em;
+        gap: 1em;
+        grid-auto-columns: 20%;
+        grid-template-rows: repeat(2, 50%);
+        grid-auto-flow: column;
+        overflow-y: visible;
+
+    }
+
 }

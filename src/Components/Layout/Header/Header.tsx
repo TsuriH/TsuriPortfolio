@@ -41,6 +41,9 @@ export function Header(): JSX.Element {
             <div className="image-wave-container bottom-wave" id="wave3">
                 <img src={bottomWave} alt="" />
             </div>
+            <div className="image-wave-container steady-wave" id="wave3">
+                <img src={bottomWave} alt="" />
+            </div>
 
             {/* cant hide the gap between the animated waves and the bottom of the header component */}
             {/* <div className="backgroundWaves">
