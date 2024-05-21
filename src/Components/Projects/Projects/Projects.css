@@ -24,7 +24,7 @@
     grid-auto-columns: 45%;
     grid-template-rows: repeat(2, 50%);
     grid-auto-flow: column;
-    overflow-y: scroll;
+    overflow-y: hidden;
     /* Enable horizontal scrolling */
 
 }
@@ -40,13 +40,14 @@
 }
 
 .Projects .project-container:after {
-    content: " ";
+    content: "";
     position: absolute;
     bottom: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
     background: rgb(68, 146, 228, 0.7);
+    transition: height 0.45s ease-in-out;
 
 }
 

@@ -22,10 +22,6 @@ function Contact(): JSX.Element {
                 <img src={land} alt="" />
             </div>
 
-
-
-
-
             <h1>contact.</h1>
 
             <div className="contact-options-container">
