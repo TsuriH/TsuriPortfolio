@@ -45,7 +45,7 @@
     flex-direction: row;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 1.5rem;
     border-radius: 5px;
 
@@ -67,7 +67,7 @@
 
 .About .welcome {
     font-size: 2rem;
- 
+
 }
 
 .About .welcome span {
@@ -91,23 +91,18 @@
     .About {
         display: flex;
         align-items: center;
-        
+
     }
-
-    .About .description-container {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-    }
-
-}
-
-/* media query 1024px */
-@media (min-width: 1024px) {
-
 
     .About .about-me {
         flex-direction: row;
+
+    }
+
+    .About .description-container {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -119,9 +114,36 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        font-size: 2rem;
+        border-radius: 5px;
+        padding: 1em 0;
+    }
+
+}
+
+/* media query 1024px */
+@media (min-width: 1024px) {
+
+
+    .About .about-me {
+        flex-direction: row;
+
+    }
+
+
+    .About .skills {
+        background-color: rgb(64, 154, 170);
+        width: 20%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
         font-size: 3rem;
         border-radius: 5px;
+        padding: 1em 0;
     }
 
     .About .welcome {
@@ -156,3 +178,4 @@
         margin-bottom: 0px;
     }
 }
+

@@ -1,10 +1,9 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "./Projects.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { url } from "inspector";
-import { Header } from "../../Layout/Header/Header";
 
 function Projects(): JSX.Element {
+
+
+
     return (
         <div className="Projects">
             {/* <div className="skill-icons-container"></div> */}
@@ -35,13 +34,13 @@ function Projects(): JSX.Element {
                     <img src="https://assets.promptbase.com/DALLE_IMAGES%2FAHEJZdrj5sHfHgLmV6ri%2Fresized%2F1675501688381_800x800.webp?alt=media&token=bc007d49-e940-47ba-a578-57df8df007be" alt="" />
                 </div>
 
-                
-                
 
-                
-                
 
-                
+
+
+
+
+
 
             </div>
 

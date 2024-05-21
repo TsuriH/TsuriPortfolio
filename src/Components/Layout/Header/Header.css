@@ -61,7 +61,7 @@
 .Header .front-wave {
     position: absolute;
     height: 10%;
-    right: 120px;
+    left: 0px;
     animation: go-up-front-wave 3s ease-in-out infinite;
     animation-delay: calc(var(--i) * 0.25s);
     width: 100%;
@@ -71,7 +71,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    left: 0px;
+    left:0px;
     bottom: 0px;
     height: 20px;
     background: linear-gradient(180deg, #20b6c6 0%, #38788d 25%, #205fa5 100%);
@@ -79,7 +79,7 @@
     /* problem it doesnt help even if I'm trying to add specific non animation like  animation: no-animation 0s linear infinite @keyframes no-animation {
   0% {}
   100% {}
-};*/
+*/
     animation: none !important;
 }
 
@@ -116,6 +116,23 @@
 
 /* responsive */
 @media (min-width: 1000px) {
+
+
+    .Header .front-wave::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        bottom: 0px;
+        height: 20px;
+        background: linear-gradient(180deg, #20b6c6 0%, #38788d 25%, #205fa5 100%);
+        filter: blur(10px);
+        /* problem it doesnt help even if I'm trying to add specific non animation like  animation: no-animation 0s linear infinite @keyframes no-animation {
+      0% {}
+      100% {}
+    */
+        animation: none !important;
+    }
 
     .Header {
         font-size: 3rem;
