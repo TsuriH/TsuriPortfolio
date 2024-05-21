@@ -30,20 +30,32 @@
 .About .about-me {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     gap: 2em;
+    height: 100%;
+
 
 }
 
 .About .skills {
     background-color: rgb(64, 154, 170);
-    width: 20%;
+    width: 100%;
+    height: 90%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
-    font-size: 3rem;
-    
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    border-radius: 5px;
+
+
+}
+
+.About .description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 .About .desc {
@@ -55,8 +67,7 @@
 
 .About .welcome {
     font-size: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 0px;
+ 
 }
 
 .About .welcome span {
@@ -80,6 +91,7 @@
     .About {
         display: flex;
         align-items: center;
+        
     }
 
     .About .description-container {
@@ -92,6 +104,31 @@
 
 /* media query 1024px */
 @media (min-width: 1024px) {
+
+
+    .About .about-me {
+        flex-direction: row;
+    }
+
+
+    .About .skills {
+        background-color: rgb(64, 154, 170);
+        width: 20%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        font-size: 3rem;
+        border-radius: 5px;
+    }
+
+    .About .welcome {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 0px;
+    }
 
     .About {
         align-items: center;
@@ -112,7 +149,7 @@
         width: 60%;
         display: flex;
         flex-direction: column;
-        
+
     }
 
     .About .welcome {

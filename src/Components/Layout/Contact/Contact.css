@@ -88,8 +88,8 @@
     width: 30%;
     height: auto;
     position: absolute;
-    bottom: 180px;
-    left: 200px;
+    bottom: 50px;
+    left: 50px;
 
 }
 
@@ -103,8 +103,8 @@
     width: 30%;
     height: auto;
     position: absolute;
-    bottom: 180px;
-    right: 250px;
+    bottom: 50px;
+    right: 40px;
 }
 
 .Contact .whiteSeaweed-image-container img {
@@ -113,19 +113,21 @@
     display: block
 }
 
+/* media query 768px */
+@media (min-width: 768px) and (max-width: 1023px) {
 
 
-@media (min-width: 1000px) {
+}
 
+/* media query 1024px */
+@media (min-width: 1024px) {
+    
+.Contact .whiteSeaweed-image-container {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    bottom: 180px;
+    right: 250px;
+}
 
-    .Contact h1 {
-        font-size: 6rem;
-        margin-bottom: 2rem;
-    }
-
-
-
-    .Contact .contact-icons-container {
-        font-size: 2rem;
-    }
 }
