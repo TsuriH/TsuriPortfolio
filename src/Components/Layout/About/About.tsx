@@ -6,9 +6,9 @@ function About(): JSX.Element {
             <div className="about-me">
 
                 <div className="skills">
-                    <p>Full stack developer</p>
-                    <p>Digital designer</p>
-                    <p>Creative Thinker</p>
+                    <p>Full stack <br></br>developer</p>
+                    <p>Digital  <br></br>designer</p>
+                    <p>Creative <br></br> Thinker</p>
                 </div>
 
                 <div className="description-container">
